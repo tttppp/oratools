@@ -13,8 +13,8 @@ PROC:
 		SpawnOffset: 1,1
 		Facing: 768
 	Selectable:
-		Bounds: 72,45,0,-4
-		DecorationBounds: 72,75,1,-4
+		Bounds: 3072, 1920, 0, -170
+		DecorationBounds: 3072, 3200, 42, -170
 	-WithIdleOverlay@TOP:
 	WithIdleOverlay@topsolid:
 		Sequence: topsolid
@@ -96,8 +96,8 @@ THF:
 
 BARR:
 	Selectable:
-		Bounds: 48,20
-		DecorationBounds: 48,48
+		Bounds: 2048, 853
+		DecorationBounds: 2048, 2048
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
@@ -122,8 +122,8 @@ BARR:
 
 TENT:
 	Selectable:
-		Bounds: 48,20
-		DecorationBounds: 48,48
+		Bounds: 2048, 853
+		DecorationBounds: 2048, 2048
 	Building:
 		Footprint: x= xx ==
 		Dimensions: 2,3
@@ -144,8 +144,8 @@ TENT:
 
 TENF:
 	Selectable:
-		Bounds: 48,20
-		DecorationBounds: 48,48
+		Bounds: 2048, 853
+		DecorationBounds: 2048, 2048
 	Building:
 		Footprint: x= xx ==
 		Dimensions: 2,3

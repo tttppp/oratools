@@ -51,6 +51,7 @@ class _Extensions:
             Sequences=set(),
             Weapons=set(),
             Notifications=set(),
+            Voices=set(),
         )
         self._files = set()
 

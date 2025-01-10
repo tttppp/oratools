@@ -4,12 +4,10 @@ PROC:
 	Building:
 		Footprint: =+x +=+ x==
 		Dimensions: 3,3
-		LocalCenterOffset: 0,-512,0
-	Refinery:
+	DockHost:
 		DockAngle: 768
-		DockOffset: 1,1
+		DockOffset: 0,512,0
 	FreeActor:
-		Actor: HARV
 		SpawnOffset: 1,1
 		Facing: 768
 	Selectable:
@@ -28,25 +26,21 @@ PROC:
 	-HitShape:
 	-HitShape@BOTTOMLEFT:
 	-HitShape@TOP:
-
 	HitShape@TOPLEFT:
 		TargetableOffsets: 0,-1052,0
 		Type: Rectangle
 			TopLeft: -1536, -256
 			BottomRight: -256,256
-
 	HitShape@TOPRIGHT:
 		TargetableOffsets: 1050,1152,0  ,   620,830,0
 		Type: Rectangle
 			TopLeft: 256, -1024
 			BottomRight: 1536, 256
-
 	HitShape@BOTRIGHT:
 		TargetableOffsets: -1600,1052,0
 		Type: Rectangle
 			TopLeft: 256, 718
 			BottomRight: 1536, 1280
-
 	HitShape@BOTLEFT:
 		TargetableOffsets: -1600,-1252,0  ,  -1700,-730,0
 		Type: Rectangle
@@ -106,19 +100,14 @@ BARR:
 			BottomRight: 1036,1036
 	Building:
 		Footprint: x= xx ==
-		Dimensions: 2,3
 		LocalCenterOffset: 0,-200,0
 	RallyPoint:
 	Exit@1:
-		RequiresCondition: !being-captured
 		SpawnOffset: 700,-100,0
 		ExitCell: 1,0
-		ProductionTypes: Soldier, Infantry
 	Exit@2:
-		RequiresCondition: !being-captured
 		SpawnOffset: -700,600,0
 		ExitCell: 0,2
-		ProductionTypes: Soldier, Infantry
 
 TENT:
 	Selectable:
@@ -130,17 +119,13 @@ TENT:
 		LocalCenterOffset: 0,-200,0
 	RallyPoint:
 	Exit@1:
-		RequiresCondition: !being-captured
 		SpawnOffset: 700,-100,0
 		ExitCell: 1,0
 		Facing: 512
-		ProductionTypes: Soldier, Infantry
 	Exit@2:
-		RequiresCondition: !being-captured
 		SpawnOffset: -700,600,0
 		ExitCell: 0,2
 		Facing: 1024
-		ProductionTypes: Soldier, Infantry
 
 TENF:
 	Selectable:
@@ -148,5 +133,4 @@ TENF:
 		DecorationBounds: 2048, 2048
 	Building:
 		Footprint: x= xx ==
-		Dimensions: 2,3
 		LocalCenterOffset: 0,-200,0

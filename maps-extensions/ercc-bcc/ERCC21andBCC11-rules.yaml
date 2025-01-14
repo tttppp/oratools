@@ -48,8 +48,8 @@ PROC:
 			BottomRight: -256, 2048
 
 ^Palettes:
-	PaletteFromPaletteWithAlpha@cloak:
-		Name: cloak
+	PaletteFromPlayerPaletteWithAlpha@cloak:
+		BaseName: cloak
 		BasePalette: player
 		Alpha: 0.45
 
